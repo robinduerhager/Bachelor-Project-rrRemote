@@ -1,0 +1,56 @@
+{
+  "name": "rrremote_authentication_service",
+  "version": "1.0.0",
+  "description": "For validating and resolving incoming Firebase tokens",
+  "main": "build/main.js",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "node .",
+    "dev": "backpack",
+    "build": "backpack build",
+    "gen:types": "graphql-codegen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rrremote/rrremote_artist_service.git"
+  },
+  "keywords": [
+    "hshl",
+    "nodejs",
+    "royalrender",
+    "RR",
+    "rrRemote"
+  ],
+  "author": "Robin Dürhager <robin.duerhager@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rrremote/rrremote_artist_service/issues"
+  },
+  "homepage": "https://gitlab.com/rrremote/rrremote_artist_service#readme",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.11.2",
+    "@graphql-codegen/typescript": "1.11.2",
+    "@graphql-codegen/typescript-resolvers": "1.11.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.11.3",
+    "apollo-server-express": "^2.9.16",
+    "backpack-core": "^0.8.4",
+    "ddd-base": "^0.9.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.9.0",
+    "graphql": "^14.5.8",
+    "shallow-equal-object": "^1.1.1",
+    "winston": "^3.2.1",
+    "winston-logzio": "^5.0.3"
+  }
+}

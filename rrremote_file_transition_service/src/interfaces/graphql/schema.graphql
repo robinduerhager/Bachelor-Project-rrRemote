@@ -1,0 +1,6 @@
+# The Storage GraphQL-Type for Renderjobs
+# It specifies the bucketName and fileName of the MinIO Instance, where the Renderjob has been stored or can be stored
+type Storage @key(fields: "bucketName fileName") {
+  bucketName: String!
+  fileName: String!
+}

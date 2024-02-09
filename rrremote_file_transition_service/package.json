@@ -1,0 +1,56 @@
+{
+  "name": "rrremote_file_transition_service",
+  "version": "1.0.0",
+  "description": "The rrRemote Service for Uploading, Downloading and handling internal files",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "node .",
+    "build": "backpack build",
+    "dev": "backpack",
+    "gen:types": "graphql-codegen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rrremote/rrremote_file_transition_service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rrremote/rrremote_file_transition_service/issues"
+  },
+  "homepage": "https://gitlab.com/rrremote/rrremote_file_transition_service#readme",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.11.2",
+    "@graphql-codegen/typescript": "1.11.2",
+    "@graphql-codegen/typescript-resolvers": "1.11.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.11.3",
+    "@types/amqplib": "^0.5.13",
+    "@types/archiver": "^3.0.0",
+    "@types/fs-extra": "^8.1.0",
+    "@types/minio": "^7.0.5",
+    "amqplib": "^0.5.5",
+    "apollo-server-express": "^2.9.16",
+    "archiver": "^3.1.1",
+    "backpack-core": "^0.8.4",
+    "ddd-base": "^0.9.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "extract-zip": "^1.6.7",
+    "fs-extra": "^9.0.0",
+    "graphql": "^14.5.8",
+    "minio": "^7.0.13",
+    "uuid": "^3.4.0",
+    "winston": "^3.2.1",
+    "winston-logzio": "^5.0.3",
+    "xml2js": "^0.4.23"
+  }
+}

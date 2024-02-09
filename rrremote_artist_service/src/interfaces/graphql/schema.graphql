@@ -1,0 +1,13 @@
+
+# The Artist Service holds any operation which is connected to Artists
+# Therefore it now implements a GraphQL-Endpoint for querying the currently requesting Artist
+extend type Query {
+  currentArtist: Artist!
+}
+
+# The GraphQL-Artist-Type which implements the primary key 'uid'
+# And holds the attributes 'uid' and 'email' which can't be null, expressed by the exclamation mark
+type Artist @key(fields: "uid"){
+  uid: String!
+  email: String!
+}

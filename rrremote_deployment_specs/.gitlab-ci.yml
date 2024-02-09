@@ -1,0 +1,15 @@
+stages:
+  - deploy
+  # restart maybe better be made manually?
+
+deploy:dockercomposeyml:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - internal-shell
+  script:
+    - sudo mv docker-compose.yml /home/rrremote/docker-compose.yml
+    - cd /home/rrremote
+    #- ls -la /mnt/RRPROJECTS
+    #- docker-compose up -d --no-deps minio1 minio2 minio3 minio4   #THIS SHOULD CHANGE, SINCE MINIO SHOULD NOT ALWAYS REDEPLOY IF SOMETHING IN THE DOCKER-COMPOSE YML CHANGES... (else the env vars won't get passed to docker-compose.yml)#

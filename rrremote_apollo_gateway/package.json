@@ -1,0 +1,48 @@
+{
+  "name": "rrremote_apollo_gateway",
+  "version": "0.1.0",
+  "description": "The second API Gateway (GraphQL based) for rrRemote",
+  "private": true,
+  "main": "build/main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "backpack",
+    "build": "backpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rrremote/rrremote_apollo_gateway.git"
+  },
+  "keywords": [
+    "hshl",
+    "nodejs",
+    "royalrender",
+    "RR",
+    "rrRemote"
+  ],
+  "author": "Robin Dürhager <robin.duerhager@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rrremote/rrremote_apollo_gateway/issues"
+  },
+  "homepage": "https://gitlab.com/rrremote/rrremote_apollo_gateway#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.11.6",
+    "apollo-server-express": "^2.9.15",
+    "backpack-core": "^0.8.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.9.2",
+    "winston": "^3.2.1",
+    "winston-logzio": "^5.0.3"
+  }
+}

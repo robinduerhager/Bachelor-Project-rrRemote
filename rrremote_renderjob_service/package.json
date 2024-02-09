@@ -1,0 +1,62 @@
+{
+  "name": "rrremote_renderjob_service",
+  "version": "1.0.0",
+  "description": "Renderjob Service for rrRemote, which should handle validating renderjob-project files and actually submitting the project to the rrremote_submit_proxy",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "node .",
+    "build": "backpack build",
+    "dev": "backpack",
+    "gen:types": "graphql-codegen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rrremote/rrremote_renderjob_service.git"
+  },
+  "keywords": [
+    "hshl",
+    "nodejs",
+    "royalrender",
+    "RR",
+    "rrRemote",
+    "renderjob",
+    "management"
+  ],
+  "author": "Robin Dürhager <robin.duerhager@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rrremote/rrremote_renderjob_service/issues"
+  },
+  "homepage": "https://gitlab.com/rrremote/rrremote_renderjob_service#readme",
+  "dependencies": {
+    "@apollo/federation": "^0.11.3",
+    "@types/amqplib": "^0.5.13",
+    "@types/node": "^13.7.1",
+    "amqplib": "^0.5.5",
+    "apollo-server-express": "^2.9.16",
+    "backpack-core": "^0.8.4",
+    "ddd-base": "^0.9.1",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "express": "^4.17.1",
+    "firebase-admin": "^7.4.0",
+    "graphql": "^14.6.0",
+    "uuid": "^3.4.0",
+    "winston": "^3.2.1",
+    "winston-logzio": "5.0.3",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.12.1",
+    "@graphql-codegen/typescript": "^1.12.1",
+    "@graphql-codegen/typescript-resolvers": "^1.12.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "native-ext-loader": "^2.3.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}

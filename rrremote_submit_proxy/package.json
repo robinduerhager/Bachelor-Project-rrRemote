@@ -1,0 +1,40 @@
+{
+  "name": "rrremote_submit_proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "node .",
+    "build": "backpack build",
+    "dev": "backpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rrremote/rrremote_submit_proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rrremote/rrremote_submit_proxy/issues"
+  },
+  "homepage": "https://gitlab.com/rrremote/rrremote_submit_proxy#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.1",
+    "amqplib": "^0.5.5",
+    "backpack-core": "^0.8.4",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "uuid": "^3.4.0"
+  }
+}

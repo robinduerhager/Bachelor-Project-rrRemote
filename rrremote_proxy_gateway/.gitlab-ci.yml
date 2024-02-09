@@ -1,0 +1,28 @@
+stages:
+    - build
+    - deploy
+
+before_script:
+    - docker info
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+build nginx image:
+    stage: build
+    tags:
+        - internal-general
+    image: docker:stable
+    services:
+        - docker:dind
+    script:
+        - docker build -t $CI_REGISTRY_IMAGE .
+        - docker push $CI_REGISTRY_IMAGE
+
+deploy nginx image:
+    stage: deploy
+    tags:
+        - internal-shell
+    script:
+        - cd /home/rrremote
+        - docker-compose pull proxy
+        - docker-compose up -d --no-deps proxy
+

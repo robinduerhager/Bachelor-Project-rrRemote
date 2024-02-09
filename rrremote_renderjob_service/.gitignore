@@ -1,0 +1,12 @@
+node_modules/
+build/
+*npm-debug.log*
+
+.env*
+
+# postgres for local development
+postgres
+
+# ignore vscode settings
+.vscode/
+*creds*

@@ -1,0 +1,9 @@
+overwrite: true
+schema: './src/interfaces/graphql/schema.graphql'
+generates:
+  src/domain/generated/graphql-types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+    config:
+      federation: true
